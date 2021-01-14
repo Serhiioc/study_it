@@ -15,5 +15,6 @@ btneng.addEventListener("click", function() {
 })
 
 btnrus.addEventListener("click", function() {
-    console.log(arr ["rus"]);
+    for (let i=0; i<arr["rus"].length; i++) 
+    console.log(arr["rus"][i])
 })
