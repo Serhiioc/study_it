@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    color: chocolate;
+}
+
+.button {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 50px;
+    border: none;
+    background-color: burlywood;
+    color: chocolate;
+    font-size: 20px;
+}    
