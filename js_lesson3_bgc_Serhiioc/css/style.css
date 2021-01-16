@@ -1,0 +1,25 @@
+/* body {
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    
+}
+.button--background {
+    margin-right: 45px;
+}
+
+.button {
+    border: none;
+    background-color: #121212;
+    color: ivory;
+    margin-top: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    min-height: 25px;
+} */
+.header {
+    text-align: center;
+}
