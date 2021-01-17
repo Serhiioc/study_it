@@ -12,7 +12,7 @@ document.addEventListener("keydown", function (evt) {
     for (var i = 0; i < 6; i++ ) {
       hex += range.charAt(Math.floor(Math.random() * range.length));
     }
-        document.querySelector("body").style.backgroundColor = hex;
+     document.querySelector("body").style.backgroundColor = hex;
     } 
 });
   
