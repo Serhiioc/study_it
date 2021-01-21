@@ -38,6 +38,9 @@ body {
   border: 1px solid #e0e0e0;
   padding: 10px 15px;
   font-size: 16px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 410px;
 }
 
 /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
@@ -71,6 +74,8 @@ body {
 .tab>input[type="radio"]:checked+label {
   background-color: #fff;
   border-bottom: 1px solid #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   width: 200px;
   font-size: 16px;
   padding: 2px 8px;

@@ -26,6 +26,7 @@ body {
     padding: 3px;
     color: ivory;
     margin-bottom: 25px;
+    max-height: 30px;
 }
 
 .form__input:hover {
@@ -49,6 +50,15 @@ body {
     min-width: 120px;
     margin: 0 auto;
     padding: 5px;
+    max-height: 30px;
+    background-color: rgb(117, 192, 46);
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 5px 12px 27px 14px rgba(0,0,0,0.43); */
+}
+.form__button:hover {
+    box-shadow: none;
+    background-color:  rgb(45, 170, 34);
 }
 
 .js-validate-error-field {
