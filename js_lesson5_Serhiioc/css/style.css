@@ -1,0 +1,75 @@
+@import url("border-style.css");
+
+@import url("form-style.css");
+
+@import url("tab-style.css");
+
+.content-bg {
+    background-color: #fff;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bg-desc {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.content-border {
+    flex-direction: column;
+}
+
+/* Старый код, хотел использовать для JS */
+
+/* main style*/
+/* body {
+    background-color: khaki;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tab {
+    background-color: #fff;
+    width: 650px;
+    height: 600px;
+}
+
+/* personal style */
+
+/* .tab__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+}
+
+.tab__item {
+    margin-right: 5px;
+    width: 30%;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tab__item:last-child {
+    margin-right: 0;
+} */
+
+.bg-header {
+    text-align: center;
+    margin: 25px 0;
+}

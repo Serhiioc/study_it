@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form class="form js-form" action="mail.php" method="POST">
+        <legend class="form__legend">Information about you</legend>
+        <label class="form__label" for="text">Enter your name</label>
+        <input class="form__input" type="text" placeholder="Ivan" name="user-name" required data-validate-field="name">
+        <label class="form__label" for="email">Enter your email</label>
+        <input class="form__input" type="email" placeholder="ivan@gmail.com" name="user-email" required data-validate-field="email">
+        <label class="form__label" for="phone">Enter your phone</label>
+        <input class="form__input phone" type="tel" name="user-phone" required data-validate-field="phone">
+        <div class="form__sex-wrap">
+            <span>Chouse your sex</span>
+            <label class="form__label"  for="sex">man</label>
+            <input class="" type="radio" name="user-sex" value="men" required data-validate-field="men">
+            <label class="form__label"  for="sex">woman</label>
+            <input type="radio" name="user-sex" value="women" required data-validate-field="woman">
+        </div>
+        <input class="form__button" type="submit" value="send me">
+    </form>
+    <script src="./js/just-validate.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>
