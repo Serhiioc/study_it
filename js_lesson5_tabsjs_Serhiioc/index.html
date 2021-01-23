@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="tab-list">
+            <li class="tab-item" data-tabnumber="1">Random color</li>
+            <li class="tab-item" data-tabnumber="2">Border radius</li>
+            <li class="tab-item" data-tabnumber="3">Send form</li>
+        </ul>
+        <div class="tab-content content-bg">
+            <h2 class="header-bg">press space</h2>
+            <p class="desc-bg"></p>
+        </div>
+        <div class="tab-content">
+            <h2 class="border-header">change border radius</h2>
+            <div class="border-content">
+                <input class="range top" type="range" min="0" max="100" value="0">
+                <input class="range right" type="range" min="0" max="100" value="0">
+                <div class="sample"></div>
+                <input class="range bottom" type="range" min="0" max="100" value="0">
+                <input class="range left" type="range" min="0" max="100" value="0">
+            </div>
+        </div>
+        <div class="tab-content">
+            <form class="form js-form" action="./php/mail.php" method="POST">
+                <legend class="form__legend">Information about you</legend>
+                <label class="form__label" for="text">Enter your name</label>
+                <input class="form__input" type="text" placeholder="Ivan" name="user-name" required
+                    data-validate-field="name">
+                <label class="form__label" for="email">Enter your email</label>
+                <input class="form__input" type="email" placeholder="ivan@gmail.com" name="user-email" required
+                    data-validate-field="email">
+                <label class="form__label" for="phone">Enter your phone</label>
+                <input class="form__input phone" type="tel" name="user-phone" required data-validate-field="phone">
+                <div class="form__sex-wrap">
+                    <span>Chouse your sex</span>
+                    <label class="form__label" for="male">male<input id="male" class="form__radio" type="radio"
+                            name="user-sex" value="male" required data-validate-field="men"></label>
+                    <label class="form__label" for="female">female<input id="female" class="form__radio" type="radio"
+                            name="user-sex" value="female" required data-validate-field="woman"></label>
+                </div>
+                <input class="form__button" type="submit" value="send me">
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/just-validate.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>
