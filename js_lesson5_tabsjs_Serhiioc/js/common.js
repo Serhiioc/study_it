@@ -153,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 tabSelect[0].classList.add("tab-bg")
                 tabSelect[0].classList.remove("tab-item--default")
              } else {
-                tabSelect[0].classList.remove("tab-bg")
                 tabSelect[0].classList.add("tab-item--default")
             }
         });
