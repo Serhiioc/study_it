@@ -126,6 +126,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     tabSelect[0].classList.add("tab-item--active");
 
+    tabSelect[0].classList.add("tab-bg");
+
     
     function changebg (tabnum) {
         for (let i = 0; i < tabContent.length; i++) {
@@ -149,8 +151,10 @@ document.addEventListener("DOMContentLoaded", function() {
         elem.addEventListener("click", function () {
             if (elem.dataset.tabnumber == 1) {
                 tabSelect[0].classList.add("tab-bg")
+                tabSelect[0].classList.remove("tab-item--default")
              } else {
                 tabSelect[0].classList.remove("tab-bg")
+                tabSelect[0].classList.add("tab-item--default")
             }
         });
     });

@@ -42,6 +42,10 @@ body {
     cursor: pointer;
 }
 
+.tab-item--default {
+    background-color: rgb(90, 122, 153) !important;
+}
+
 .tab-item--active {
     font-size: 18px;
     width: 48%;
