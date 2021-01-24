@@ -17,6 +17,22 @@ document.addEventListener("DOMContentLoaded", function() {
         
     });
 
+    
+
+    document.addEventListener("click", function (evt) {
+        if (evt.target.className == `tab-content content-bg tab-content--active`) {
+        let hex = '#';
+        let range = 'ABCDEF0123456789';
+            
+        for (var i = 0; i < 6; i++ ) {
+            hex += range.charAt(Math.floor(Math.random() * range.length));
+        }
+            document.querySelector(".content-bg").style.backgroundColor = hex;
+            document.querySelector(".tab-bg").style.backgroundColor = hex;
+            document.querySelector(".desc-bg").innerHTML = `color: ${hex};`;
+        } 
+    });
+
     // Генерация радиуса
 
     let btl = document.querySelector(".top"),
