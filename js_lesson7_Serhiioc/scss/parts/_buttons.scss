@@ -1,0 +1,35 @@
+.button {
+    color: ivory;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+
+    &--add {
+        background-color: rgb(42, 218, 42);
+        width: 200px;
+        height: 45px;
+
+        &:hover {
+            background-color: rgb(35, 185, 35);
+        }
+        &-s {
+            height: 30px;
+            width: 125px;
+        }
+    }
+    &--delete {
+        background-color: transparent;
+        width: 35px;
+        height: 30px;
+        color: red;
+        font-size: 25px;
+        padding: auto;
+        // margin: auto;
+
+        &:hover {
+            color: darkred;
+        }
+    }
+}

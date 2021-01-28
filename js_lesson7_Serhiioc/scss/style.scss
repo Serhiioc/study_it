@@ -1,0 +1,132 @@
+@import "./parts/buttons";
+
+@import "./parts/basic";
+
+body {
+    background-color: darkslategrey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.container {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.header {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.tasks-in {
+    min-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &__field {
+        height: 35px;
+        padding: 5px;
+        border: none;
+        background-color: lightblue;
+        color: darkslategrey;
+        border-radius: 5px;
+        margin-right: 30px;
+        flex-grow: 1;
+    }
+
+}
+
+.task-wrap {
+    width: 550px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+
+
+.tasks-out {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    min-width: 400px;
+    animation: taskin 0.6s ease-in-out 1 normal forwards;
+   
+    
+     &--checked {
+        opacity: 0.5;
+    }
+
+    &__title {
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    &__status {
+        display: none;
+    }
+
+    &__button {
+        display: none;
+        position: relative;
+        left: -5px;
+    }
+    
+}
+
+.tasks-out:hover {
+    grid-template-columns: 1fr 30px 30px;
+    
+}
+
+.tasks-out:hover>.tasks-out__title {
+    text-align: left;
+}
+
+.tasks-out:hover>.tasks-out__button, .tasks-out:hover>.tasks-out__status {
+    display: block;
+    
+}
+
+
+// animation
+
+@keyframes taskin {
+    0% {
+        transform: scale(0.2);
+        transform: skewY(-5deg);
+    }
+    50% {
+        transform: skewY(5deg);
+    }
+    70% {
+        transform: scale(1.2);
+
+    }
+    100% {
+        transform: scale(1);
+        transform: skewY(0deg);
+    }
+}
