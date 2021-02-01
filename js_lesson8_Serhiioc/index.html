@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="tab">
+        <h1 class="header">Chouse tab</h1>
+        <input type="radio" name="tab-item" class="tab__item-1" id="tab__item-1" value="" checked>
+        <label for="tab__item-1" class="tab__item">background-color</label>
+        <input type="radio" name="tab-item" class="tab__item-2" id="tab__item-2" value="">
+        <label for="tab__item-2" class="tab__item">border-radius</label>
+        <input type="radio" name="tab-item" class="tab__item-3" id="tab__item-3" value="">
+        <label for="tab__item-3" class="tab__item">View array</label>
+        <div class="tab__content-1 content-bg">
+            <h2 class="bg-header">press space</h2>
+            <p class="bg-desc"></p>
+        </div>
+        <div class="tab__content-2 content-border">
+            <h2 class="border-header">change border radius</h2>
+            <div class="border-content">
+                <input class="range top" type="range" min="0" max="100" value="0">
+                <input class="range right" type="range" min="0" max="100" value="0">
+                <div class="sample"></div>
+                <input class="range left" type="range" min="0" max="100" value="0">
+                <input class="range bottom" type="range" min="0" max="100" value="0">
+            </div>
+        </div>
+        <div class="tab__content-3 content-array">
+            <h2 class="header-array">Выберети язык :</h2>
+            <button class="button button--primary button--eng">eng</button>
+            <button class="button button--primary button--rus">rus</button>
+            <div class="desc-array"></div>
+        </div>
+    </div>
+
+    
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

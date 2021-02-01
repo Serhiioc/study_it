@@ -1,0 +1,53 @@
+@import url("border-style.css");
+
+@import url("tab-style.css");
+
+.content-bg {
+    background-color: #fff;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.bg-header {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.bg-desc {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.content-border {
+    flex-direction: column;
+}
+
+.content-array {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: burlywood;
+    color: chocolate;
+    font-size: 20px;
+} 
+
+.button:hover {
+    border: 2px double darkred;
+}
+
+.button--eng {
+    margin-bottom: 25px;
+}
+
